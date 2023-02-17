@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>employee</title>
+<script type="text/javascript">
+function employee(){
+	var id, name, sal;
+	id = document.sharada.id.value;
+	id = parseInt(id);
+	name = document.sharada.name.value;
+	sal = document.sharada.sal.value;
+	document.writeln("employee id::"+id+"</br>");
+	document.writeln("employee name::"+name+"</br>");
+	document.writeln("employee salary::"+sal);
+	
+}
+</script>
+</head>
+<body align="center">
+<form name="sharada">
+<label>employee id</label>
+<input type="text" name="id" value="" placeholder="enter id"><br>
+<label>employee name</label>
+<input type="text" name="name" value="" placeholder="enter name"><br>
+<label>employee salary</label>
+<input type="text" name="sal" value="" placeholder="enater salary"><br>
+<input type="button" value="submit" onclick="employee()">
+</form>
+</body>
+</html>

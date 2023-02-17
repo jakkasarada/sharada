@@ -1,0 +1,7 @@
+mailling\model\mailmodel.class
+mailling\model\psmodel.class
+mailling\controller\psservlet.class
+mailling\controller\mailservlet.class
+mailling\dao\psdao.class
+mailling\controller\mailsecondservlet.class
+mailling\dao\maildao.class

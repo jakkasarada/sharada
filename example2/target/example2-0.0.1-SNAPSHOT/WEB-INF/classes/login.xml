@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       <bean id="log" class="example2.Login">
+       <constructor-arg value="33"/>
+       <constructor-arg value="22"/>
+       <constructor-arg value="34"/>
+       </bean>
+ </beans>

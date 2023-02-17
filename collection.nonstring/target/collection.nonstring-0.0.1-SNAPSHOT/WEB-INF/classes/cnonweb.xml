@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       <bean id="d1" class="collection.nonstring.Details1">
+       <constructor-arg><list>
+       <value>1001</value>
+       <value>java</value>
+       </list>
+       </constructor-arg>
+       </bean>
+       <bean id="d2" class="collection.nonstring.Details1">
+       <constructor-arg><list>
+       <value>1002</value>
+       <value>c</value>
+       </list>
+       </constructor-arg>
+       </bean>
+       <bean id="d3" class="collection.nonstring.Details1">
+       <constructor-arg><list>
+       <value>1003</value>
+       <value>python</value>
+       </list>
+       </constructor-arg>
+       </bean>
+       <bean id="detail" class="collection.nonstring.Details">
+       <constructor-arg value="1"/>
+       <constructor-arg value="sharada"/>
+       <constructor-arg value="123454323"/>
+       <constructor-arg>
+       <list>
+       <ref bean="d1"/>
+       <ref bean="d2"/>
+       <ref bean="d3"/>
+       </list>
+       </constructor-arg>
+       </bean>
+</beans>
